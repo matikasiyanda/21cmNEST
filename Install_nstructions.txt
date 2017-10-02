@@ -1,0 +1,39 @@
+﻿Install instructions
+
+
+1.  Pull Multinest from (https://github.com/JohannesBuchner/MultiNest) & install cmake
+
+
+Go to multinest and check readme for the OS used.
+
+
+$cmake -DCMAKE_{C,CXX}_FLAGS="-arch x86_64" -DCMAKE_Fortran_FLAGS="-m64" ..
+
+
+ $make
+
+
+
+
+2.)
+$ pip install pymultinest
+
+
+to properly load it into python 
+
+
+$export LD_LIBRARY_PATH=/Users/User_name/MultiNest_v3.10_CMake/multinest/lib:$LD_LIBRARY_PATH
+
+
+$ emacs -nw ~/.profile or nano ~/.profile
+and put the export LD_LIBRARY_PATH=/Users/User_name/MultiNest_v3.10_CMake/multinest/lib:$LD_LIBRARY_PATH
+
+
+
+
+3.)
+sudo pip install mpi4py
+
+
+4.)
+brew install mpich
